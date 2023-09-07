@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', 'Helvetica', 'sans-serif';
+}
+
+body{
+    background-color:#c6b299;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #be4c546c;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+header a:hover{
+    color: #ff0112;
+    transform: scale(1.5);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+h1{
+    color: #be4c54
+}
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+.flex{
+    display: flex;
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.topo-do-site h1{
+    color: #be4c54;
+    font-size: 40px;
+}
+.topo-do-site .txt-topo-site{
+    color: black;
+    margin: 40px 0;
+}
+
+header div .logo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+.especialidades .especialidades-box{
+    color: black;
+    padding: 40px;
+    border: 2px solid white;
+    margin-top: 45px;
+    border-radius: 20px;
+}
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+section.especialidades h2{
+    font-size: 30px;
+    color: #be4c54;
+    padding-left: 15px;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px white;
+}
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.253);
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    
+    
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
